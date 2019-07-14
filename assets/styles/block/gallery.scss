@@ -1,3 +1,6 @@
+@import '~bootstrap/dist/css/bootstrap-grid.css';
+@import '~slick-carousel/slick/slick.css';
+
 .block-gallery {margin-top:1em;
   img {max-width:100%}
   .arrow { width:24px; height:24px; position:absolute; top:50%; margin-top:-28px;z-index:1; cursor:pointer;transition:opacity .2s;
