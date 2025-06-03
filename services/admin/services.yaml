@@ -1,0 +1,16 @@
+services:
+    '@enhavo/block/tab/BlockTab':
+        import: BlockTab
+        chunk: input
+        arguments:
+            - '@enhavo/app/action/ActionManager'
+        tags:
+            - { name: 'enhavo_app.tab' }
+
+    '@enhavo/block/action/BlockCollapseAction':
+        import: BlockCollapseAction
+        chunk: action
+        arguments:
+            - '@enhavo/app/manager/ResourceInputManager'
+        tags:
+            - { name: 'enhavo_app.action' }
